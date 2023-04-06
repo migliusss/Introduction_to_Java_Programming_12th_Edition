@@ -10,7 +10,7 @@ public class ConversionFromCToFAndFToC {
 		// Print names for the columns. 
 		System.out.println("Celsius      Fahrenheit   |   Fehrenheit    Celsius");
 		
-		// Create a for loop to calculate results. Variable i for and j for two tables. 
+		// Create a for loop to calculate results. Variable i and j two tables. 
 		for (int i = 0, j = 20; i <= 100 && j <= 270; i+=2, j+=5) {
 			
 			// Formating the console output. 
