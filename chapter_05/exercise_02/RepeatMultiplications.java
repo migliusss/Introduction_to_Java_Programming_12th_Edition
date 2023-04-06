@@ -1,35 +1,55 @@
-/* 
- * Write a program that prompts a student to enter a Java score. 
- * If the score is greater or equal to 60, display "you pass the exam"; 
- * otherwise, display "you don't pass the exam". 
- * Your program ends with input -1. 
+/*
+ * Listing 5.4 SubtractionQuizLoop.java, generates five random subtraction questions. 
+ * Revise the program to generate ten random multiplication questions 
+ * for two integers between 1 and 12. Display the correct count and test time. 
  */
 
 package chapt5;
 
 import java.util.Scanner;
 
-public class PassOrFail {
+public class RepeatMultiplication {
 	public static void main(String[] args) {
+		final int NUMBER_OF_COUNTS = 10; // Number of questions.  
+		int correctCount = 0; // Count the number of correct answers. 
+		int count = 0; // Count the number of questions. 
+		long startTime = System.currentTimeMillis();
+		String output = " "; // An empty string. 
+		
 		// Create a Scanner. 
 		Scanner input = new Scanner(System.in);
 		
-		// Prompt the user to enter the score. 
-		System.out.print("Enter your score: ");
-		int score = input.nextInt();
-		
-		// Create a while loop to run the program until the user enters -1.
-		while (score != -1) {
+		while (count < NUMBER_OF_COUNTS) {
+			// Generate two random digit integers from 1 - 12. 
+			int number1 = 1 + (int)(Math.random() * 13);
+			int number2 = 1 + (int)(Math.random() * 13);
 			
-			// Check the score. 
-			if (score >= 60) {
-				System.out.println("You pass the exam.");
+			// Prompt the user to answer the subtraction question. 
+			System.out.print("What is " + number1 + " * " + number2 + "? ");
+			int answer = input.nextInt();
+			
+			// Grade the answer and display the results. 
+			if (number1 * number2 == answer) {
+				System.out.println("You are correct!");
+				correctCount++;
 			}
 			else {
-				System.out.println("You don't pass the exam.");
+				System.out.println("Your answer is wrong. \n" + number1 + " * " + number2 + " should be " 
+						+ (number1 * number2));
 			}
 			
-			score = input.nextInt();
+			// Increase the question count. 
+			count++;
+			
+			output += "\n" + number1 + "*" + number2 + "=" + answer + ((number1 * number2 == answer) ? 
+					" correct": " wrong");
 		}
+		
+		// Compute the test time. 
+		long endTime = System.currentTimeMillis();
+		long testTime = endTime - startTime;
+		
+		System.out.println("Correct count is " + correctCount + "\nTest time is " 
+				+ testTime / 1000 + " seconds\n" + output);
 	}
 }
