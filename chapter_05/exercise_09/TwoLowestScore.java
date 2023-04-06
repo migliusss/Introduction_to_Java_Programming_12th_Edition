@@ -37,7 +37,7 @@ public class TwoLowestScore {
 				nameLowest = name;
 			}
 			
-			// If the score is lower than the current lowestScore the new score becomes the lowestScore. 
+			// If the score is lower than the current lowest score the new score becomes the lowest score. 
 			else if (score < lowestScore) {
 				secondLowestScore = lowestScore;
 				nameSecondLowest = nameLowest;
