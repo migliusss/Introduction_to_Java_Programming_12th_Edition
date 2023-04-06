@@ -1,4 +1,5 @@
-/** Write a program that prompts a student to enter a Java score. 
+/** 
+ * Write a program that prompts a student to enter a Java score. 
  * If the score is greater or equal to 60, display "you pass the exam"; 
  * otherwise, display "you don't pass the exam". 
  * Your program ends with input -1. 
