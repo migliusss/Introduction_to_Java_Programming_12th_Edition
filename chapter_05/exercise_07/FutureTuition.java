@@ -12,10 +12,11 @@ public class FutureTuition {
 		double increase = 1.06; // 6% increase. 
 		double tuition = 10000; // Tuition. 
 		
+		// Calculate tuition for each year with a for loop. 
 		for (int i = 1; i <= 10; i++) {
-			// Calculate future tuition. 
 			tuition = tuition * increase;
 			
+			// Print results with a console formatter. 
 			System.out.printf("In %2d years tuition will be $%.2f\n", i, tuition);
 		}
 	}
