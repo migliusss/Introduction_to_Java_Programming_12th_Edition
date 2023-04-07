@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class MilesToKilometers {
 	public static void main(String[] args) {
 		
-		// Create a constant for 1 mile.
+		// Create a constant.  
 		final double MILE = 1.6;
 		
 		// Create a Scanner.
@@ -21,10 +21,10 @@ public class MilesToKilometers {
 		double miles = input.nextDouble();
 		
 		// Calculate meters.
-		double meters = miles * MILE;
+		double kilometers = miles * MILE;
 		
 		// Display results.
-		System.out.println(miles + " miles is " + meters + " kilometers.");
+		System.out.println(miles + " miles is " + kilometers + " kilometers.");
 		
 	}
 
