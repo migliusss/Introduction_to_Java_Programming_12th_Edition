@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class FindTheNumberOfYears {
 	public static void main(String[] args) {
-		// Create a Scanner 
+		// Create a Scanner.
 		Scanner input = new Scanner(System.in);
 		
 		// Prompt the user to enter the minutes.
