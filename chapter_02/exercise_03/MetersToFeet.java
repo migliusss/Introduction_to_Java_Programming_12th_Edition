@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class MetersToFeet {
 	public static void main(String[] args) {
 		// Create a constant. 
-		final double FEET = 3.2786;
+		final double FEET = 3.2786; // 1 meter is 3.2786 feet.
 		
 		// Create a Scanner
 		Scanner input = new Scanner(System.in);
