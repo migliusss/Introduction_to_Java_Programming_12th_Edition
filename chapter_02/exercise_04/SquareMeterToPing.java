@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class SquareMeterToPing {
 	public static void main(String[] args) {
 		// Create a constant.
-		final double PING = 0.3025;
+		final double PING = 0.3025; // 1 square meter is 0.3025 ping.
 		
 		// Create a Scanner.
 		Scanner input = new Scanner(System.in);
