@@ -1,7 +1,7 @@
 package chapt2;
 
 /* 
- * A program that converts square meter into ping
+ * A program that converts square meters into ping.
  */
 
 import java.util.Scanner;
