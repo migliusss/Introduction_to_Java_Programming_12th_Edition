@@ -11,7 +11,7 @@ public class MilesToKilometers {
 	public static void main(String[] args) {
 		
 		// Create a constant.  
-		final double MILE = 1.6;
+		final double KILOMETERS = 1.6; // 1 mile is 1.6 kilometers. 
 		
 		// Create a Scanner.
 		Scanner input = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class MilesToKilometers {
 		double miles = input.nextDouble();
 		
 		// Calculate meters.
-		double kilometers = miles * MILE;
+		double kilometers = miles * KILOMETERS;
 		
 		// Display results.
 		System.out.println(miles + " miles is " + kilometers + " kilometers.");
