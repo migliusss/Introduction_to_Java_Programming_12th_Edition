@@ -25,7 +25,7 @@ public class NumbersInAPyramidPattern {
 		    
 		    // Inner loop for printing number in reverse order.
 		    for (int j = 0; j < i; j++) {
-		    	currentNumber /= 3; // Divide by 3 again to get the value lower by 3. 
+		    	currentNumber /= 3; // Divide by 3 again. 
 		        System.out.printf("%-6d", currentNumber);
 		    }
 		    
