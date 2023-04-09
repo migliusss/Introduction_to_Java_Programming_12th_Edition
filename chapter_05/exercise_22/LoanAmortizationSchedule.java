@@ -50,6 +50,7 @@ public class LoanAmortizationSchedule {
 			interest = (int) (monthlyInterestRate * balance * 100) / 100.0;
 			principal = (int) ((monthlyPayment - interest) * 100) / 100.0;
 			balance = (int) ((balance - principal) * 100) / 100.0; // Update balance with a new value. 
+			
 			// Display the table. 
 			System.out.println(i + "\t\t" + interest + "\t\t" + principal + "\t\t" + balance);
 		}
