@@ -24,8 +24,6 @@ public class FinancialApplication {
 		System.out.print("Number Of Years: ");
 		int numberOfYears = input.nextInt();
 		
-		// Obtain monthly interest rate. 
-		
 		// Print column names. 
 		System.out.println("Interest Rate     " + "Monthly Payment     " + "Total Payment     ");
 		
