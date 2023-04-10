@@ -25,26 +25,24 @@ public class FinancialApplication {
 		int numberOfYears = input.nextInt();
 		
 		// Print column names. 
-		System.out.println("Interest Rate     " + "Monthly Payment     " + "Total Payment     ");
+		System.out.println("\nInterest Rate\t\tMonthly Payment\t\tTotal Payment\t\t");
 		
 		// Create a for loop to calculate payments for each interest rate. 
 		for (double i = 5.0; i <= 10.0; i+=0.25) {
-			double monthlyInterestRate = i / 1200; // Obtain monthly interest rate. 
+			
+			// Obtain monthly interest rate. 
+			double monthlyInterestRate = i / 1200;
 			
 			// Calculate monthly payment. 
 			monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12));
 			
-			// Calculate yearlyPayment.
-			totalPayment = monthlyPayment * numberOfYears * 12;
+			// Calculate total payment.
+			totalPayment = (int) (monthlyPayment * numberOfYears * 12 * 100) / 100.0;
 			
-			// If statement to format the output. 
-			if (i == 10.0)
-				System.out.printf("%.3f%% %16.2f %21.2f", i, monthlyPayment, totalPayment);
-			else 
-				System.out.printf("%.3f%% %17.2f %21.2f", i, monthlyPayment, totalPayment);
-				System.out.println();
+			// Display results. 
+			System.out.println(i + "\t\t\t" + (int) (monthlyPayment * 100) / 100.0 + "\t\t\t" + totalPayment + "\t\t\t");
 			
-
 		}
 	}
 }
+
