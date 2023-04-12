@@ -23,7 +23,7 @@ public class FirstDaysOfEachMonth {
 		// A boolean variable to check if a year is a leap year. 
 		boolean isLeapYear = (userYear % 4 == 0 && userYear % 100 != 0) || (userYear % 400 == 0);
 		
-		// A for loop that prints first day of the week. 
+		// A for loop for printing first day of each month in the year. 
 		for (int i = 1; i <= 12; i++) {
 			
 			// A switch statement to find out the month name. 
