@@ -76,24 +76,23 @@ public class Calendars {
 			System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
 			
 			// Print initial spaces. 
-		    for (int j = 0; j < firstDayOfTheYear; j++) {
-		    	System.out.print("    ");
-		    }
+		    	for (int j = 0; j < firstDayOfTheYear; j++) {
+		    		System.out.print("    ");
+		    	}
 			
 			// A for loop to print days in the calendar.
-            for (int j = 1; j <= daysInMonth; j++)
-            {
-            	if (j < 10) { // Print 3 blank spaces for numbers with one digit. 
-            		System.out.print("   " + j);
-                } 
-            	else { // Print 2 blank spaces for numbers with two digits. 
-                    System.out.print("  " + j);
-                }
+            		for (int j = 1; j <= daysInMonth; j++) {
+            			if (j < 10) { // Print 3 blank spaces for numbers with one digit. 
+            				System.out.print("   " + j);
+                		} 
+            			else { // Print 2 blank spaces for numbers with two digits. 
+                    			System.out.print("  " + j);
+                		}
                 
-            	if ((j + firstDayOfTheYear) % 7 == 0) { // An if statement to move to the next line. 
-                     System.out.println();
-                }
-            }
+            			if ((j + firstDayOfTheYear) % 7 == 0) { // An if statement to move to the next line. 
+                     			System.out.println();
+                		}
+            		}
 			
 			// Print a new line between month calendars. 
 			System.out.println();
