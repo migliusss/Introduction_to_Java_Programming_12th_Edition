@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class FirstDaysOfEachMonth {
 	public static void main(String[] args) {
 		String month = "";
+		int daysInMonth = 0;
 		// Create a Scanner.
 		Scanner input = new Scanner(System.in);
 		
@@ -29,28 +30,45 @@ public class FirstDaysOfEachMonth {
 			// A switch statement to find out the month name. 
 			switch(i) {
 			case(1): month = "January, 1 ";
+			daysInMonth = 31;
 			break;
 			case(2): month = "February, 1 ";
+			if (isLeapYear) {
+				daysInMonth = 29;
+			}
+			else {
+				daysInMonth = 28;
+			}
 			break;
 			case(3): month = "March, 1 ";
+			daysInMonth = 31;
 			break;
 			case(4): month = "April, 1 ";
+			daysInMonth = 30;
 			break;
 			case(5): month = "May, 1 ";
+			daysInMonth = 31;
 			break;
 			case(6): month = "June, 1 ";
+			daysInMonth = 30;
 			break;
 			case(7): month = "July, 1 ";
+			daysInMonth = 31;
 			break;
 			case(8): month = "August, 1 ";
+			daysInMonth = 31;
 			break;
 			case(9): month = "September, 1 ";
+			daysInMonth = 30;
 			break;
 			case(10): month = "October, 1 ";
+			daysInMonth = 31;
 			break;
 			case(11): month = "November, 1 ";
+			daysInMonth = 30;
 			break;
 			case(12): month = "December, 1 ";
+			daysInMonth = 31;
 			}
 			
 			// Switch statement for printing the right weekday based on the if statement. 
@@ -71,21 +89,8 @@ public class FirstDaysOfEachMonth {
 			break;
 			}
 			
-			// If statement to check how many days there are in a month. 
-			if (i == 4 || i == 6 || i == 9 || i == 11) {
-				firstDayOfTheYear = (firstDayOfTheYear + 30) % 7;
-			}
-			else if (i == 2) {
-				if (isLeapYear) {
-					firstDayOfTheYear = (firstDayOfTheYear + 29) % 7;
-				}
-				else {
-					firstDayOfTheYear = (firstDayOfTheYear + 28) % 7;
-				}
-			}
-			else {
-				firstDayOfTheYear = (firstDayOfTheYear + 31) % 7;
-			}
+			// Find out first day in each month. 
+			firstDayOfTheYear = (firstDayOfTheYear + daysInMonth) % 7;
 			
 		}
 
