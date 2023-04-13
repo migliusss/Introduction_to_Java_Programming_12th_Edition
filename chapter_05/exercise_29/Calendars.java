@@ -83,12 +83,7 @@ public class Calendars {
 			
 			// A for loop to print days in the calendar.
             		for (int j = 1; j <= daysInMonth; j++) {
-            			if (j < 10) { // Print 3 blank spaces for numbers with one digit. 
-            				System.out.print("   " + j);
-                		} 
-            			else { // Print 2 blank spaces for numbers with two digits. 
-                    			System.out.print("  " + j);
-                		}
+            			System.out.printf("%4d", j);
                 
             			if ((j + firstDayOfTheYear) % 7 == 0) { // An if statement to move to the next line. 
                      			System.out.println();
