@@ -71,6 +71,7 @@ public class Calendars {
 			daysInMonth = 31;
 			}
 			
+			// Header and names of the weekdays.  
 			System.out.println("\n       " + month + " " + userYear);
 			System.out.println("-----------------------------");
 			System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
