@@ -29,7 +29,7 @@ public class PalindromeInteger {
 	}
 	// Return true if number is a palindrome. 
 	public static boolean isPalindrome(int number) {
-		
+		// Check if the number is reversal. 
 		if (reverse(number) == number) {
 			return true;
 		}
