@@ -22,24 +22,24 @@ public class SortThreeNumbers {
 		displaySortedNumbers(number1, number2, number3);
 	}
 	
-	// Create a method that sorts numbers in decreasing order. For example numbers ABC. 
+	// Create a method that sorts numbers in ascending order.
 	public static void displaySortedNumbers(double num1, double num2, double num3) {
-		if (num1 >= num2 && num2 >= num3) { // ABC
+		if (num1 <= num2 && num2 <= num3) { 
 			System.out.print(num1 + " " + num2 + " " + num3);
 		}
-		else if (num1 >= num3 && num3 >= num2) { // ACB
+		else if (num1 <= num3 && num3 <= num2) { 
 			System.out.print(num1 + " " + num3 + " " + num2);
 		}
-		else if (num2 >= num1 && num1 > num3) { // BAC
+		else if (num2 <= num1 && num1 <= num3) { 
 			System.out.print(num2 + " " + num1 + " " + num3);
 		}
-		else if (num2 >= num3 && num3 > num1) { // BCA
+		else if (num2 <= num3 && num3 <= num1) { 
 			System.out.print(num2 + " " + num3 + " " + num1);
 		}
-		else if (num3 >= num1 && num1 >= num2) { // CAB
+		else if (num3 <= num1 && num1 <= num2) { 
 			System.out.print(num3 + " " + num1 + " " + num2);
 		}
-		else { // CBA
+		else {
 			System.out.print(num3 + " " + num2 + " " + num1);
 		}
 			
