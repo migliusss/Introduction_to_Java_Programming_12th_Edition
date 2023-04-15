@@ -20,7 +20,7 @@ public class ConversionBetweenPoundsKilograms {
 		
 		// A for loop to print a two tables. 
 		for (double i = 1, j = 20; i <= 199 && j <= 515; i += 2, j += 5) {
-			System.out.printf("%-10.0f%7.1f      |    %-10.0f%.2f \n", i, poundToKilogram(i), j, kilogramToPound(j));
+			System.out.printf("%-10.0f%7.1f      |    %-10.0f%5.2f \n", i, poundToKilogram(i), j, kilogramToPound(j));
 		}
 	}
 	
