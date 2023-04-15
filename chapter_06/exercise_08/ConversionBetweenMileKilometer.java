@@ -14,7 +14,7 @@ package chapt6;
 public class ConversionBetweenMileKilometer {
 	public static void main(String[] args) {
 		// Print header. 
-		System.out.println("Miles    Kilometers  |    Kilometers\tMiles");
+		System.out.println("Miles    Kilometers  |    Kilometers    Miles");
 		
 		// A for loop to print from miles to kilometers and from kilometers to miles. i = miles and j = kilometers.
 		for (int i = 1, j = 20; i <= 10 && j <= 65; i++, j += 5) {
