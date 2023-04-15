@@ -1,5 +1,5 @@
-# Introduction_to_Java_Programming_12th_Edition
-I am reading the book Introduction to Java Programming 12th Edition by Y. Daniel Liang to learn Java. The book provides many exercises for each chapter, that I am doing to practice programming. 
+# SOLUTIONS TO JAVA PROGRAMMING 12th EDITION
+I am reading the book Introduction to Java Programming 12th Edition by Y. Daniel Liang to learn Java. After each chapter the book provides many exercises, that I am doing to learn programming and problem solving. 
 
 ⭐️ This repository contains my solutions to exercises. 
 
