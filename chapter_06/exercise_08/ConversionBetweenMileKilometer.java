@@ -25,16 +25,14 @@ public class ConversionBetweenMileKilometer {
 	
 	// Create a method that converts miles to kilometers. 
 	public static double mileToKilometer(double mile) {
-		final double KILOMETERS = 1.6;
 		
-		return mile * KILOMETERS;
+		return mile * 1.6;
 		
 	}
 	// Create a method that converts kilometers to miles. 
 	public static double kilometerToMile(double kilometer) {
-		final double MILE = 1.6;
 		
-		return kilometer / MILE;
+		return kilometer / 1.6;
 		
 	}
 }
