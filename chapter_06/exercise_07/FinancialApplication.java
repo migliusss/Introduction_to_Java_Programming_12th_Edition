@@ -28,7 +28,6 @@ public class FinancialApplication {
 		
 		// Create a for loop to display future value for the years from 1 to 30. 
 		for (int i = 1; i <= 30; i++) { // i = years. 
-			
 			System.out.printf("%d \t %10.2f \n", i, futureInvestmentValue(amount, monthlyInterestRate, i));
 		}
 	}
