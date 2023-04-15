@@ -26,15 +26,12 @@ public class ConversionBetweenPoundsKilograms {
 	
 	// Convert from pounds to kilograms. 
 	public static double poundToKilogram(double pound) {
-		double kilograms = 2.204 * pound;
-		
-		return kilograms;
-		
+		return 2.204 * pound;
 	}
+	
 	// Convert from kilograms to pounds. 
 	public static double kilogramToPound(double kilogram) {
-		double pounds = 0.453 * kilogram;
-		
-		return pounds;
+		return 0.453 * kilogram;
+	
 	}
 }
