@@ -19,7 +19,6 @@ public class ReverseNumbers {
 			numbers[i] = input.nextInt(); 
 		}
 		
-		
 		// Display numbers in reversed order. 
 		for (int i = numbers.length - 1; i >= 0; i--) { // Print array values starting from the last index. 
 			System.out.print(numbers[i] + " ");
