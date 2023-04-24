@@ -52,10 +52,11 @@ public class ComputingLcm {
 	public static int gcd(int a, int b) {
 		int gcd = 0;
 		
-        if (b == 0) {
-            return a;
-        } else {
-            return gcd(b, a % b);
-        }
+        	if (b == 0) {
+			return a;
+        	} 
+		else {
+            		return gcd(b, a % b);
+        	}
 	}
 }
