@@ -32,19 +32,16 @@ public class ReverseAnArray {
 			System.out.println(numbers[i] + " ");
 		}
 	}
-	
+
 	/** Create a method for reversing an array */
 	public static void reverseArray(double[] array) {
-			double[] temp = new double[array.length]; // Create an array of array length to store values of an array temporary.
+			double temp; // Variable for storing temporary element. 
 			
-			// A for loop for assigning array values to a temporary array. 
-			for (int i = 0; i < array.length; i++) {
-				temp[i] = array[i];
-			}
-			
-			// Using temp array to assign values in reversed order. 
-			for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
-				array[j] = temp[i];
+			// Swapping numbers until the middle. 
+			for (int i = 0, j = array.length - 1; i < array.length / 2; i++, j--) {
+				temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
 			}
 	}
 }
