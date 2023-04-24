@@ -35,7 +35,7 @@ public class ComputeDeviation {
 		}
 		
 		// Display the mean by calling the mean method. 
-		System.out.printf("The mean is %.2f \n", mean(numbers));
+		System.out.println("The mean is " + mean(numbers));
 		
 		// Display the deviation by calling the deviation method. 
 		System.out.print("The standard deviation is " + deviation(numbers));
