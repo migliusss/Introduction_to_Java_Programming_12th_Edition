@@ -15,16 +15,16 @@ public class TestAccount {
 		// Deposit $3,000.
 		account.deposit(3000);
 		
-		System.out.println("Account " + account.getId());
+		System.out.println("Account: " + account.getId());
 		
 		// Print the date when this account was created. 
-		System.out.println("The account was created: " + account.getDateCreated()); 
+		System.out.println("Date created: " + account.getDateCreated()); 
 		
 		// Print balance.
 		System.out.println("Balance: $" + account.getBalance());
 		
 		// Print monthly interest. 
-		System.out.println("Monthly interest rate: $" + account.getMonthlyInterest());
+		System.out.println("Monthly interest: $" + account.getMonthlyInterest());
 		
 	}
 }
