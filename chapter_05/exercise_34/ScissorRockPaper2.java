@@ -14,9 +14,11 @@ public class ScissorRockPaper2 {
 		int computerScore = 0;
 		int userScore = 0;
 		int winner = 0;
+		
 		// Create a Scanner. 
 		Scanner input = new Scanner(System.in);
 		
+		// A loop that checks if either computer or the user wins by more than 3 times. 
 		while(winner != 3 && winner != -3) {
 			
 			// Prompt the user. 
@@ -73,9 +75,11 @@ public class ScissorRockPaper2 {
 				System.out.println("Error: invalid number");
 			}
 			
+			// Check the results. 
 			winner = computerScore - userScore;
 		}
 		
+		// Print a winner. 
 		if (winner >= 3) {
 			System.out.println("Computer wins!");
 		}
