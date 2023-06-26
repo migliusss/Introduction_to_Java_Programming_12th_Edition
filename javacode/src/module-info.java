@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author miglius
+ *
+ */
+module javacode {
+}
