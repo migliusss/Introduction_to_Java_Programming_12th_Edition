@@ -5,7 +5,7 @@ package chapter_06;
  * and display the number of winning games. 
  */
 
-public class exercise_06_32 {
+public class Exercise_06_32 {
 	/** Main method. */
 	public static void main(String[] args) {
 		int point = 0;
