@@ -49,6 +49,7 @@ public class Exercise_08_03 {
         }
 	}
 	
+	/** A method for sorting a 2D array. */
 	public static void sort(int[][] m) {
 		for (int i = 0; i < m.length; i++) {
 			for (int j = i + 1; j < m.length; j++) {
