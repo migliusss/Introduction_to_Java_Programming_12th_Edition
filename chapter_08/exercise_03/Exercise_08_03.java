@@ -46,11 +46,6 @@ public class Exercise_08_03 {
                     int tempCount = correctCounts[i];
                     correctCounts[i] = correctCounts[j];
                     correctCounts[j] = tempCount;
-                    
-                    // Swap student indices.
-                    char[] tempAnswers = answers[i];
-                    answers[i] = answers[j];
-                    answers[j] = tempAnswers;
                 }
             }
         }
