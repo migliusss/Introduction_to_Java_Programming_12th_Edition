@@ -6,6 +6,8 @@ package chapter_08;
  */
 
 public class Exercise_08_03 {
+    final static int STUDENT = 0;
+    final static int SCORE = 1;
 	/** Main method. */
 	public static void main(String[] args) {
 		// Student's answers to the questions. 
@@ -22,8 +24,7 @@ public class Exercise_08_03 {
 		// Key to the questions. 
 		char[] keys = {'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D'};
 		
-        // Array to store correct counts for each student.
-        int[] correctCounts = new int[answers.length];
+		int[][] studentGrades = new int[answers.length][2];
 		
 		// Grade all answers. 
 		for (int i = 0; i < answers.length; i++) {
@@ -35,26 +36,34 @@ public class Exercise_08_03 {
 				}
 			}
 			
-			 correctCounts[i] = correctCount;
+			studentGrades[i][STUDENT] = i;
+			studentGrades[i][SCORE] = correctCount;
+			
 		}
 		
-        // Sort the correct counts and corresponding student indices in descending order.
-        for (int i = 0; i < correctCounts.length - 1; i++) {
-            for (int j = i + 1; j < correctCounts.length; j++) {
-                if (correctCounts[i] < correctCounts[j]) {
-                    // Swap correct counts.
-                    int tempCount = correctCounts[i];
-                    correctCounts[i] = correctCounts[j];
-                    correctCounts[j] = tempCount;
-                }
-            }
-        }
+		sort(studentGrades);
         
         // Display students in descending order of correct answers.
-        for (int i = 0; i < answers.length; i++) {
-            System.out.println("Student " + i + "'s correct count is " + correctCounts[i]);
+        for (int i = 0; i < studentGrades.length; i++) {
+            System.out.println("Student " + studentGrades[i][STUDENT] + "'s correct count is " + studentGrades[i][SCORE]);
         }
-		
 	}
 	
+	public static void sort(int[][] m) {
+		for (int i = 0; i < m.length; i++) {
+			for (int j = i + 1; j < m.length; j++) {
+				if (m[i][SCORE] < m[j][SCORE]) {
+					// Swap scores. 
+					int tempScore = m[i][SCORE];
+					m[i][SCORE] = m[j][SCORE];
+					m[j][SCORE] = tempScore;
+					
+					// Swap students. 
+					int tempStudent = m[i][STUDENT];
+					m[i][STUDENT] = m[j][STUDENT];
+					m[j][STUDENT] = tempStudent;
+				}
+			}
+		}
+	}
 }
